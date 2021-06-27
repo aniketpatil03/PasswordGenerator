@@ -8,8 +8,10 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 letters_qty = int(input("How many letters do you want in your password:\n"))
 numbers_qty = int(input("How many numbers do you want in your password:\n"))
 char_qty = int(input("How many characters do you want in your password:\n"))
+ 
+password = ""                 #empty string
 
-password = ""
+#used string concatebation
 for char in range(0, letters_qty):
     password = password + random.choice(letters)
 
@@ -18,8 +20,8 @@ for char in range(0, numbers_qty):
 
 for char in range(0, char_qty):
     password += random.choice(symbols)
-
-print("Password is ", password)
+    
+print("Password is ", password)    #Prints the pass
 
 
 
